@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">O mně</a>
+          </li>
+          <li>
+            <a class="header__link" href="#work">Projekty</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Kontakt</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <a class="header__resume btn" href="#">Životopis</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <path fill-rule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <ul class="mobilo-nav__menu">
+        <li>
+          <a class="mobile-nav__link" href="#about">O mně</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#work">Projekty</a>
+        </li>
+        <li>
+          <a class="mobile-nav__link" href="#contact">Kontakt</a>
+        </li>
+        <li class="mobile-nav__link-line"></li>
+        <li>
+          <a class="mobile-nav__btn btn" href="#">Životopis</a>
+        </li>
+      </ul>
+    </div>
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/profile_pic.jpg" alt="Profile picture">
+        <h1 class="hero__title">Ahoj, jmenuji se Antonín 👍</h1>
+        <p class="hero__description">a učím se být <strong>Web Developerem</strong> </p>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">O mně</h2>
+          <p class="about__description">Jsem <strong>student</strong>, který se vášnivě věnuje programování <strong>front-endu</strong> ve svém volném čase. </p>
+          <p class="about__description">S každým projektem se rozšiřuje mé porozumění <strong>HTML, CSS a JavaScriptu</strong>. Neustále hledám nové výzvy a příležitosti, které mi umožní zdokonalit se v oblastech jako responzivní design, optimalizace výkonu a použití moderních frameworků jako React.</p>
+          <p class="about__description">I když cesta k profesionální kariéře front-end developera může být náročná, tak doufám, že se tím jednou budu živit</p>
+          <hr class="about__hr">
+          <h3 class="about__subtitle">Dovednosti</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">JS</li>
+              <li class="about__list">React</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="work container section">
+        <h2 class="work__title">Projekty</h2>
+        <p class="work__description">V této části se můžete podívat na mé projekty, na kterých jsem pracoval.</p>
+        <div class="work__container">
+          <!-- Projekt 1 -->
+          <h3 class="work__project-title">Palindrome Checker</h3>
+          <div class="work__img-wrapper work__image1">
+            <img src="/projekt1.png" alt="Palindrome Checker">
+          </div>
+          <div class="work__project work__content1">
+            <h3 class="work__project-subtitle">Palindrome Checker</h3>
+            <p class="work__project-description">Tento projekt byl součástí kurzu na freecodecamp.com, kde jsem si poprvé vyzkoušel svojí znalost o "Regular expressions"</p>
+            <a class="btn work__project-btn" href="https://github.com/tondanov/freeCodeCamp-Projects">Kód</a>
+          </div>
+          <!-- Projekt 2 -->
+          <h3 class="work__project-title">Roman Numeral Converter</h3>
+          <div class="work__img-wrapper work__image2">
+            <img src="/projektnum.png" alt="Roman Numeral Converter">
+          </div>
+          <div class="work__project work__content2">
+            <h3 class="work__project-subtitle">Roman Numeral Converter</h3>
+            <p class="work__project-description">Tento projekt byl také součástí kurzu na freecodecamp.com. V tomto projektu jsem se naučil, jak pracovat s objekty"</p>
+            <a class="btn work__project-btn" href="https://github.com/tondanov/freeCodeCamp-Projects">Kód</a>
+          </div>
+          <!-- Projekt 3 -->
+          <h3 class="work__project-title">Rock Paper Scissors</h3>
+          <div class="work__img-wrapper work__image3">
+            <img src="/projektkamen.png" alt="Rock Paper Scissors">
+          </div>
+          <div class="work__project work__content3">
+            <h3 class="work__project-subtitle">Rock Paper Scissors</h3>
+            <p class="work__project-description">Také jsem zavítál na známou stránku Theodinproject.com, kde jedním projektů byl "Kámen, nůžky a papír". Zde jsem pracoval čiste jen se JavaScriptem</p>
+            <a class="btn work__project-btn" href="https://github.com/tondanov/Rock_Paper_Scissors">Kód</a>
+          </div>
+          <!-- Projekt 4-->
+          <h3 class="work__project-title">CV Application</h3>
+          <div class="work__img-wrapper work__image4">
+            <img src="/cvapp.png" alt="Rock Paper Scissors">
+          </div>
+          <div class="work__project work__content4">
+            <h3 class="work__project-subtitle">CV Application</h3>
+            <p class="work__project-description">CV Application byl můj první projekt, ve kterém jsem pracoval s Reactem.</p>
+            <a class="btn work__project-btn" href="https://github.com/tondanov/CV-Application" target="_blank">Kód</a>
+            <a class="btn work__project-btn-2" href="https://cv-application-ivory.vercel.app" target="_blank">Live</a>
+          </div>
+        </div>
+      </section>
+      <hr class="contact__hr">
+      <section id="contact" class="contact container ">
+        <h2 class="contact__title">Kontaktuj mě</h2>
+        <a class="contact__btn btn" href="mailto:toneknovotny@gmail.com" target="_blank">Napsat email</a>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
